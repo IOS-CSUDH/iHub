@@ -8,61 +8,89 @@
 
 ## Overview
 ### Description
-[Description of your app]
+iHub is an app where it allows you to recieve multiple social media notifications in one hub.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
 
+- **Category:**
+    - Social Media 
+- **Mobile:**
+    - IOS
+- **Story:**
+    - An app that unifies Facebook, Twitter, and Printrest all under one app. All notifications can be viewed in one feed or individually.
+- **Market:**
+    - The market for this app would consist of all age groups so long as they have access to social media accounts.
+- **Habit:**
+    - This app would be checked often so long as the user has incoming notifications from the seperate social medias.
+- **Scope:**
+    - First we focus on users of Twitter, Facebook, and Pinterest but this app could evolve into one that encompases all social media to broaden its usage. Large potential with Snapchat and TikTok.
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can register a new account
+* User can login
+* User can logout
+* User can post
+* User can see feed
+* Settings
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Profile update
+* View friend's profiles
+* Add friends
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login
+    * User can login
+* Register - User signs up and logs into their account
+    * User can register a new account
+* Profile
+    * User can see feed
+    * User can update their profile
+* Logout
+    * User can logout
+* Post
+    * User can post
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* All notifications
+* Facebook notifications
+* Pinterest notifications
+* Twitter notifications
+* Done
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Main Page [iHub] welcome page --> Force Login to one social media
+   * Second screen where Facebook, Pinterest,   Twitter ta
+* Facebook Tab jumps Facebook login Page
+   * View notifications from Facebook
+* Pinterest Tab jumps Pinterest login Page
+   * View notifications from Pinterest
+* Twitter Tab jumps Twitter login Page
+    * View notifications from Twitter
+* Done tab jumps into page where all social media's notifaction seperately
+    * It has tab for all above social media, 
+        * each tab jump into belonging page where user can see seperately notification and post
+    * It has back tab which let to go back to the second screen
+* Settings tab
+    * log out of individual social media
+
 
 ## Wireframes
-<img src="https://github.com/IOS-CSUDH/iHub/blob/main/Assets/Wireframe/Wireframe-1.png" width=600>
+<img src= "https://github.com/IOS-CSUDH/iHub/blob/main/Assets/Wireframe/Wireframe-1.png" width=600>
 <img src="https://github.com/IOS-CSUDH/iHub/blob/main/Assets/Wireframe/Wireframe-2.png" width=600>
 <img src="https://github.com/IOS-CSUDH/iHub/blob/main/Assets/Wireframe/Wireframe-3.png" width=600>
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
