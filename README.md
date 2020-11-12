@@ -93,7 +93,7 @@ iHub is an app where it allows you to recieve multiple social media notification
 
 
 ### [BONUS] Digital Wireframes & Mockups
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FSnSgpbQCZd9Kq0TUXh837p%2FiHub%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
 ### [BONUS] Interactive Prototype
 
 ## Schema 
