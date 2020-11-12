@@ -90,6 +90,7 @@ iHub is an app where it allows you to recieve multiple social media notification
 <img src= "https://github.com/IOS-CSUDH/iHub/blob/main/Assets/Wireframe/Wireframe-1.png" width=600>
 <img src="https://github.com/IOS-CSUDH/iHub/blob/main/Assets/Wireframe/Wireframe-2.png" width=600>
 <img src="https://github.com/IOS-CSUDH/iHub/blob/main/Assets/Wireframe/Wireframe-3.png" width=600>
+<img src="https://github.com/IOS-CSUDH/iHub/blob/main/Assets/Wireframe/iHub.pdf" width=600>
 
 
 ### [BONUS] Digital Wireframes & Mockups
