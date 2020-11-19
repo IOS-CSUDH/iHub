@@ -149,3 +149,30 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+##### Facebook API
+- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /characters | get all characters
+    `GET`    | /characters/?name=name | return specific character by name
+    `GET`    | /houses   | get all houses
+    `GET`    | /houses/?name=name | return specific house by name
+##### Twitter API
+- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /characters | get all characters
+    `GET`    | /characters/?name=name | return specific character by name
+    `GET`    | /houses   | get all houses
+    `GET`    | /houses/?name=name | return specific house by name
+##### Pinterest API
+- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /characters | get all characters
+    `GET`    | /characters/?name=name | return specific character by name
+    `GET`    | /houses   | get all houses
+    `GET`    | /houses/?name=name | return specific house by name    
