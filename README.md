@@ -164,10 +164,10 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
     `GET`    | /v1.1/{status} HTTP/1.1 | get post
     `GET`    | /{user_id}/user_timeline | get notification
 ##### Pinterest API
-- Base URL - [https://developers.pinterest.com/](https://developers.pinterest.com/)
+- Base URL - [https://api.tumblr.com](https://api.tumblr.com)
 
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
-    `GET`    | /post? | get post
-    `GET`    | /notification? | get notification
+    `GET`    | /posts | get posts
+    `GET`    | /user/dashboard | get notifications
 'SnapChat snapkit api https://sdk.snapkit.com'
