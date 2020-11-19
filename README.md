@@ -161,8 +161,8 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
 
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
-    `GET`    | /post? | get post
-    `GET`    | /notification? | get notification
+    `GET`    | /v1.1/{status} HTTP/1.1 | get post
+    `GET`    | /{user_id}/user_timeline | get notification
 ##### Pinterest API
 - Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
 
