@@ -150,7 +150,7 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 ##### Facebook API
-- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
+- Base URL - [http://www.graph.facebook.com](http://www.graph.facebook.com)
 
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
