@@ -123,7 +123,7 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
    | pinCaption       | String   | image caption by author |
    | pinCreatedAt     | DateTime | date when post is created (default field) |
    | pinWebsite       | Pointer to Website | website origin |
-   | pinCommentsCount | Number   | number comments that pin has |
+   | pinCommentsCount | Number   | number of comments that pin has |
 
 #### Notification (Facebook)
    | Property      | Type     | Description |
