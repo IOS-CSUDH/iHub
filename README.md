@@ -101,27 +101,27 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
 #### Post (Facebook)
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | createdAt     | DateTime | date when post is created (default field) |
+   | facObjectId      | String   | unique id for the user post (default field) |
+   | facAuthor        | Pointer to User| image author |
+   | facImage         | File     | image that user posts |
+   | facCaption       | String   | image caption by author |
+   | facCreatedAt     | DateTime | date when post is created (default field) |
 #### Post (Twitter)
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | createdAt     | DateTime | date when post is created (default field) |
+   | twtObjectId      | String   | unique id for the user post (default field) |
+   | twtAuthor        | Pointer to User| image author |
+   | twtImage         | File     | image that user posts |
+   | twtCaption       | String   | image caption by author |
+   | twtCreatedAt     | DateTime | date when post is created (default field) |
 #### Post (Pinterest)
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | createdAt     | DateTime | date when post is created (default field) |
+   | pinObjectId      | String   | unique id for the user post (default field) |
+   | pinAuthor        | Pointer to User| image author |
+   | pinImage         | File     | image that user posts |
+   | pinCaption       | String   | image caption by author |
+   | pinCreatedAt     | DateTime | date when post is created (default field) |
 
 #### Notification
    | Property      | Type     | Description |
