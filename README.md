@@ -170,3 +170,4 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
    ----------|----------|------------
     `GET`    | /post? | get post
     `GET`    | /notification? | get notification
+'SnapChat snapkit api https://sdk.snapkit.com'
