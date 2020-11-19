@@ -123,12 +123,24 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
    | pinCaption       | String   | image caption by author |
    | pinCreatedAt     | DateTime | date when post is created (default field) |
 
-#### Notification
+#### Notification (Facebook)
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | createdAt     | DateTime | date when post is created (default field) |    
+   | facObjectId      | String   | unique id for the user post (default field) |
+   | facAuthor        | Pointer to User| image author |
+   | facCreatedAt     | DateTime | date when post is created (default field) |    
+#### Notification (Twitter)
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | twtObjectId      | String   | unique id for the user post (default field) |
+   | twtAuthor        | Pointer to User| image author |
+   | twtCreatedAt     | DateTime | date when post is created (default field) |
+#### Notification (Pinterest)
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | pinObjectId      | String   | unique id for the user post (default field) |
+   | pinAuthor        | Pointer to User| image author |
+   | pinCreatedAt     | DateTime | date when post is created (default field) |
 
 [Add table of models]
 ### Networking
