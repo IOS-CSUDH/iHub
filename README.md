@@ -154,10 +154,8 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
 
    HTTP Verb | Endpoint | Description
    ----------|----------|------------
-    `GET`    | /characters | get all characters
-    `GET`    | /characters/?name=name | return specific character by name
-    `GET`    | /houses   | get all houses
-    `GET`    | /houses/?name=name | return specific house by name
+    `GET`    | //v9.0/{post-id} HTTP/1.1 | get post
+    `GET`    | /{user_id}/notifications | get notification
 ##### Twitter API
 - Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
 
