@@ -106,6 +106,12 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
    | image         | File     | image that user posts |
    | caption       | String   | image caption by author |
    | createdAt     | DateTime | date when post is created (default field) |
+#### Notification
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | createdAt     | DateTime | date when post is created (default field) |    
 
 [Add table of models]
 ### Networking
