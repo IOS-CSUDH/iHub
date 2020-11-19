@@ -122,6 +122,7 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
    | pinImage         | File     | image that user posts |
    | pinCaption       | String   | image caption by author |
    | pinCreatedAt     | DateTime | date when post is created (default field) |
+   | pinWebsite       | Pointer to Website | website origin |
 
 #### Notification (Facebook)
    | Property      | Type     | Description |
