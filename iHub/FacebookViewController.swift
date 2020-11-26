@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class FacebookViewController: UIViewController {
 
@@ -15,6 +17,8 @@ class FacebookViewController: UIViewController {
         title = "Facebook"
 
         // Do any additional setup after loading the view.
+        
+        AppEvents.logEvent(.viewedContent)
     }
     @IBAction func fbOnLoginButton(_ sender: Any) {
     }
