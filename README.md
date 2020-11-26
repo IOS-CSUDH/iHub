@@ -171,3 +171,5 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
     `GET`    | /posts | get posts
     `GET`    | /user/dashboard | get notifications
 'SnapChat snapkit api https://sdk.snapkit.com'
+
+<img src='https://github.com/IOS-CSUDH/iHub/blob/main/Twitter%20complete.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
