@@ -14,15 +14,15 @@
             <objects>
                 <viewController id="ZPY-fu-xa4" customClass="TwitterLoginviewController" customModule="iHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VW7-Ey-9aQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As2-Br-fWJ">
-                                <rect key="frame" x="114.66666666666669" y="421" width="185" height="54"/>
+                                <rect key="frame" x="114.66666666666669" y="394" width="185" height="54"/>
                                 <color key="backgroundColor" red="0.34516515932277658" green="0.70846646964383109" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="APb-4h-sI7"/>
-                                    <constraint firstAttribute="width" constant="185" id="cej-6F-N57"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="185" id="cej-6F-N57"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Login">
@@ -47,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84V-ju-Ezs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216.80000000000001" y="179.46026986506749"/>
+            <point key="canvasLocation" x="570" y="216"/>
         </scene>
         <!--Home-->
         <scene sceneID="BUz-LI-mu3">
@@ -145,6 +145,9 @@
                     <navigationItem key="navigationItem" title="Home" id="Fns-8y-qA6">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="V8j-Xf-6Y3">
                             <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <segue destination="xWD-4g-ho2" kind="showDetail" identifier="BackToHome" id="97e-gz-h2s"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" style="plain" id="JY4-H3-8mc">
                             <color key="tintColor" systemColor="labelColor"/>
@@ -156,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xw1-1t-YMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="215.94202898550725" y="1658.7053571428571"/>
+            <point key="canvasLocation" x="-175" y="1753"/>
         </scene>
         <!--Tweet View Controller-->
         <scene sceneID="Pkx-Hx-pcl">
@@ -225,7 +228,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq4-XX-ynq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="921"/>
+            <point key="canvasLocation" x="810" y="951"/>
         </scene>
         <!--Tweet Navigation Controller-->
         <scene sceneID="DVX-gp-MPM">
@@ -294,19 +297,16 @@
             </objects>
             <point key="canvasLocation" x="320" y="-1415"/>
         </scene>
-        <!--        Home Screen-->
+        <!--View Controller-->
         <scene sceneID="coT-wv-61S">
             <objects>
                 <viewController id="xWD-4g-ho2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qi8-pe-Rbn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-ID-sZP">
-                                <rect key="frame" x="44" y="457" width="244" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="KYv-oC-CHY"/>
-                                </constraints>
+                                <rect key="frame" x="84" y="428" width="147" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <state key="normal" title="Twitter">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -316,7 +316,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-Vs-kvO">
-                                <rect key="frame" x="44" y="537" width="244" height="66"/>
+                                <rect key="frame" x="84" y="512" width="204" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <state key="normal" title="Facebook">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -326,7 +326,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oE-du-APP">
-                                <rect key="frame" x="44" y="581" width="244" height="66"/>
+                                <rect key="frame" x="84" y="602" width="189" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <state key="normal" title="Pinterest">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -336,9 +336,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmg-av-3nU">
-                                <rect key="frame" x="60" y="722" width="244" height="49"/>
+                                <rect key="frame" x="84" y="697" width="244" height="49"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="jI2-Bu-hsV"/>
+                                    <constraint firstAttribute="height" constant="49" id="fJM-aV-1NK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <state key="normal" title="Done">
@@ -348,50 +348,46 @@
                                     <segue destination="ApP-B3-DqN" kind="show" id="irP-2J-nV6"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="social-media-and-marketing" translatesAutoresizingMaskIntoConstraints="NO" id="7ru-ff-LmE">
-                                <rect key="frame" x="20" y="149" width="349" height="216"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="social-media-and-marketing" translatesAutoresizingMaskIntoConstraints="NO" id="7ru-ff-LmE">
+                                <rect key="frame" x="39" y="49" width="329" height="304"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pkB-00-fyf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pkB-00-fyf" firstAttribute="trailing" secondItem="Hmg-av-3nU" secondAttribute="trailing" constant="110" id="44X-Q0-b5G"/>
-                            <constraint firstItem="f4m-Vs-kvO" firstAttribute="top" secondItem="cdc-ID-sZP" secondAttribute="bottom" constant="31" id="7F3-Om-J3v"/>
-                            <constraint firstItem="7ru-ff-LmE" firstAttribute="top" secondItem="pkB-00-fyf" secondAttribute="top" constant="9" id="Agv-VY-in1"/>
-                            <constraint firstItem="cdc-ID-sZP" firstAttribute="trailing" secondItem="9oE-du-APP" secondAttribute="trailing" id="God-rd-js3"/>
-                            <constraint firstItem="pkB-00-fyf" firstAttribute="bottom" secondItem="Hmg-av-3nU" secondAttribute="bottom" constant="91" id="Qiw-JB-q5T"/>
-                            <constraint firstItem="pkB-00-fyf" firstAttribute="trailing" secondItem="cdc-ID-sZP" secondAttribute="trailing" constant="126" id="RfS-Lz-R9G"/>
-                            <constraint firstItem="cdc-ID-sZP" firstAttribute="leading" secondItem="f4m-Vs-kvO" secondAttribute="leading" id="SXe-eT-HOH"/>
-                            <constraint firstItem="cdc-ID-sZP" firstAttribute="top" secondItem="qi8-pe-Rbn" secondAttribute="top" constant="457" id="U5T-oC-zyg"/>
-                            <constraint firstItem="Hmg-av-3nU" firstAttribute="top" secondItem="9oE-du-APP" secondAttribute="bottom" constant="75" id="U9U-3p-Zaw"/>
-                            <constraint firstItem="cdc-ID-sZP" firstAttribute="leading" secondItem="9oE-du-APP" secondAttribute="leading" id="WCN-rQ-MBh"/>
-                            <constraint firstItem="cdc-ID-sZP" firstAttribute="trailing" secondItem="f4m-Vs-kvO" secondAttribute="trailing" id="YzL-le-Lxu"/>
-                            <constraint firstItem="Hmg-av-3nU" firstAttribute="leading" secondItem="pkB-00-fyf" secondAttribute="leading" constant="60" id="Zgr-yD-RyV"/>
-                            <constraint firstItem="cdc-ID-sZP" firstAttribute="top" secondItem="7ru-ff-LmE" secondAttribute="bottom" constant="92" id="e0V-av-jk1"/>
-                            <constraint firstItem="pkB-00-fyf" firstAttribute="trailing" secondItem="7ru-ff-LmE" secondAttribute="trailing" constant="45" id="mTm-Ea-Tfk"/>
-                            <constraint firstItem="cdc-ID-sZP" firstAttribute="leading" secondItem="pkB-00-fyf" secondAttribute="leading" constant="44" id="nwy-OF-Yar"/>
-                            <constraint firstItem="7ru-ff-LmE" firstAttribute="leading" secondItem="qi8-pe-Rbn" secondAttribute="leadingMargin" id="seY-oN-tJX"/>
+                            <constraint firstItem="Hmg-av-3nU" firstAttribute="top" secondItem="9oE-du-APP" secondAttribute="bottom" constant="29" id="Ggr-c2-WCN"/>
+                            <constraint firstItem="pkB-00-fyf" firstAttribute="bottom" secondItem="Hmg-av-3nU" secondAttribute="bottom" constant="62" id="IjD-vk-hN8"/>
+                            <constraint firstItem="pkB-00-fyf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cdc-ID-sZP" secondAttribute="trailing" symbolic="YES" id="NyX-vE-Z5y"/>
+                            <constraint firstItem="Hmg-av-3nU" firstAttribute="leading" secondItem="f4m-Vs-kvO" secondAttribute="leading" id="OrN-Zx-qm2"/>
+                            <constraint firstItem="pkB-00-fyf" firstAttribute="trailing" secondItem="Hmg-av-3nU" secondAttribute="trailing" constant="86" id="OvH-kT-VjP"/>
+                            <constraint firstItem="Hmg-av-3nU" firstAttribute="leading" secondItem="pkB-00-fyf" secondAttribute="leading" constant="84" id="Qjt-0Q-44e"/>
+                            <constraint firstItem="pkB-00-fyf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="f4m-Vs-kvO" secondAttribute="trailing" symbolic="YES" id="Ziz-3N-hYj"/>
+                            <constraint firstItem="f4m-Vs-kvO" firstAttribute="top" secondItem="cdc-ID-sZP" secondAttribute="bottom" constant="18" id="bjG-Tz-Eia"/>
+                            <constraint firstItem="pkB-00-fyf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9oE-du-APP" secondAttribute="trailing" symbolic="YES" id="h74-Uo-bMu"/>
+                            <constraint firstItem="Hmg-av-3nU" firstAttribute="leading" secondItem="9oE-du-APP" secondAttribute="leading" id="hv6-ES-za6"/>
+                            <constraint firstItem="9oE-du-APP" firstAttribute="top" secondItem="f4m-Vs-kvO" secondAttribute="bottom" constant="24" id="qBo-bv-Cki"/>
+                            <constraint firstItem="Hmg-av-3nU" firstAttribute="leading" secondItem="cdc-ID-sZP" secondAttribute="leading" id="qiv-0Y-JfO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="        Home Screen" id="NNZ-wq-TlA" colorLabel="IBBuiltInLabel-Red">
-                        <barButtonItem key="backBarButtonItem" title=" " id="Rhn-eE-mFt"/>
+                    <navigationItem key="navigationItem" id="NNZ-wq-TlA" colorLabel="IBBuiltInLabel-Red">
+                        <barButtonItem key="backBarButtonItem" title="  " id="Rhn-eE-mFt"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5PM-5Q-xCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="507" y="-630"/>
+            <point key="canvasLocation" x="505.79710144927537" y="-630.13392857142856"/>
         </scene>
         <!--Done View Controller-->
         <scene sceneID="Wja-Sb-PUP">
             <objects>
                 <viewController id="ApP-B3-DqN" customClass="DoneViewController" customModule="iHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOM-xN-PW7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dz-Qw-JOH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dz-Qw-JOH">
                                 <rect key="frame" x="38" y="359" width="349" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Twitter Log Out"/>
                                 <connections>
@@ -401,6 +397,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gAM-e3-0w1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5dz-Qw-JOH" firstAttribute="leading" secondItem="gAM-e3-0w1" secondAttribute="leading" constant="38" id="AZO-Gd-wt1"/>
+                            <constraint firstItem="5dz-Qw-JOH" firstAttribute="top" secondItem="gAM-e3-0w1" secondAttribute="top" constant="359" id="L16-q0-ISK"/>
+                            <constraint firstItem="gAM-e3-0w1" firstAttribute="trailing" secondItem="5dz-Qw-JOH" secondAttribute="trailing" constant="27" id="hhc-gx-r5K"/>
+                            <constraint firstItem="gAM-e3-0w1" firstAttribute="bottom" secondItem="5dz-Qw-JOH" secondAttribute="bottom" constant="356" id="tj2-70-5Yf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2KE-cN-KYZ"/>
                 </viewController>
@@ -431,7 +433,7 @@
             <objects>
                 <viewController id="OJk-PT-0ew" customClass="PinterestViewController" customModule="iHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IVS-Iu-PsT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Sbm-rH-Yfy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -449,7 +451,7 @@
             <objects>
                 <viewController id="OzA-Jv-iQz" customClass="FacebookViewController" customModule="iHub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XML-h9-bE7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tuV-m2-Wvl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -463,6 +465,10 @@
             <point key="canvasLocation" x="-562" y="160"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="whr-i0-oTi"/>
+        <segue reference="97e-gz-h2s"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="favor-icon" width="30" height="30"/>
         <image name="ihub1" width="66.666664123535156" height="66.666664123535156"/>

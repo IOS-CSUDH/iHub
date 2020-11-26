@@ -78,11 +78,10 @@ class HomeTableViewController: UITableViewController {
     
    @IBAction func BackToHome(_ sender: Any)
    {
-    if let parentNav = self.navigationController {
-        parentNav.dismiss(animated: true) {
+    self.performSegue(withIdentifier: "BackToHome", sender: self)
 
-       }
-   }
+       
+   
     }
     
     // MARK: - Table view data source
