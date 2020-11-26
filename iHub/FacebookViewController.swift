@@ -19,10 +19,22 @@ class FacebookViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         AppEvents.logEvent(.viewedContent)
+        
+        let loginButton = FBLoginButton()
+        loginButton.center = view.center
+        view.addSubview(loginButton)
     }
     @IBAction func fbOnLoginButton(_ sender: Any) {
     }
     
+    
+    // Swift
+    //
+    // Add this to the header of your file, e.g. in ViewController.swift
+
+
+
+
 
     /*
     // MARK: - Navigation
