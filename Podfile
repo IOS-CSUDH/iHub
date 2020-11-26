@@ -8,4 +8,5 @@ target 'iHub' do
   pod 'AFNetworking'
   pod 'BDBOAuth1Manager'
   pod 'AlamofireImage'
+  pod 'FBSDKLoginKit'
 end
