@@ -23,6 +23,15 @@ class FacebookViewController: UIViewController {
         let loginButton = FBLoginButton()
         loginButton.center = view.center
         view.addSubview(loginButton)
+        
+        if let token = AccessToken.current,
+                !token.isExpired {
+                // User is logged in, do work such as go to next view controller.
+            }
+        
+        // Extend the code sample from 6a. Add Facebook Login to Your Code
+        // Add to your viewDidLoad method:
+        loginButton.permissions = ["public_profile", "email"]
     }
     @IBAction func fbOnLoginButton(_ sender: Any) {
     }
