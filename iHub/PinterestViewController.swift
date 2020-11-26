@@ -16,7 +16,9 @@ class PinterestViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func pinOnLoginButton(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
