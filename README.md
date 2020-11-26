@@ -30,18 +30,26 @@ iHub is an app where it allows you to recieve multiple social media notification
 
 **Required Must-have Stories**
 
-* User can register a new account
-* User can login
-* User can logout
-* User can post
-* User can see feed
-* Settings
+- [ ] User can register a new account
+- [x] User can login (Twitter)
+- [x] User can logout (Twitter)
+- [x] User can post (Twitter)
+- [x] User can see feed (Twitter)
+- [ ] User can login (Facebook)
+- [ ] User can logout (Facebook)
+- [ ] User can post (Facebook)
+- [ ] User can see feed (Facebook)
+- [ ] User can login (Pinterest)
+- [ ] User can logout (Pinterest)
+- [ ] User can post (Pinterest)
+- [ ] User can see feed (Pinterest)
+- [ ] Settings
 
 **Optional Nice-to-have Stories**
 
-* Profile update
-* View friend's profiles
-* Add friends
+- [ ] Profile update
+- [ ] View friend's profiles
+- [ ] Add friends
 
 ### 2. Screen Archetypes
 
