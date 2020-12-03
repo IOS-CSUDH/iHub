@@ -23,7 +23,7 @@ iHub is an app where it allows you to recieve multiple social media notification
 - **Habit:**
     - This app would be checked often so long as the user has incoming notifications from the seperate social medias.
 - **Scope:**
-    - First we focus on users of Twitter, Facebook, and Pinterest but this app could evolve into one that encompases all social media to broaden its usage. Large potential with Snapchat and TikTok.
+    - First we focus on users of Twitter, Facebook, and Tumblr but this app could evolve into one that encompases all social media to broaden its usage. Large potential with Snapchat and TikTok.
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
@@ -39,11 +39,11 @@ iHub is an app where it allows you to recieve multiple social media notification
 - [x] User can logout (Facebook)
 - [ ] User can post (Facebook)
 - [ ] User can see feed (Facebook)
-- [ ] User can login (Pinterest)
-- [ ] User can logout (Pinterest)
-- [ ] User can post (Pinterest)
-- [ ] User can see feed (Pinterest)
-- [ ] Settings
+- [x] User can login (Tumblr)
+- [ ] User can logout (Tumblr)
+- [ ] User can post (Tumblr)
+- [ ] User can see feed (Tumblr)
+- [x] Settings
 
 **Optional Nice-to-have Stories**
 
@@ -71,7 +71,7 @@ iHub is an app where it allows you to recieve multiple social media notification
 
 * All notifications
 * Facebook notifications
-* Pinterest notifications
+* Tumblr notifications
 * Twitter notifications
 * Done
 * Settings
@@ -79,11 +79,11 @@ iHub is an app where it allows you to recieve multiple social media notification
 **Flow Navigation** (Screen to Screen)
 
 * Main Page [iHub] welcome page --> Force Login to one social media
-   * Second screen where Facebook, Pinterest,   Twitter ta
+   * Second screen where Facebook, Tumblr,   Twitter ta
 * Facebook Tab jumps Facebook login Page
    * View notifications from Facebook
-* Pinterest Tab jumps Pinterest login Page
-   * View notifications from Pinterest
+* Tumblr Tab jumps Tumblr login Page
+   * View notifications from Tumblr
 * Twitter Tab jumps Twitter login Page
     * View notifications from Twitter
 * Done tab jumps into page where all social media's notifaction seperately
@@ -122,7 +122,7 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
    | twtImage         | File     | image that user posts |
    | twtCaption       | String   | image caption by author |
    | twtCreatedAt     | DateTime | date when post is created (default field) |
-#### Post (Pinterest)
+#### Post (Tumblr)
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | pinObjectId      | String   | unique id for the user post (default field) |
@@ -145,7 +145,7 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
    | twtObjectId      | String   | unique id for the user post (default field) |
    | twtAuthor        | Pointer to User| image author |
    | twtCreatedAt     | DateTime | date when post is created (default field) |
-#### Notification (Pinterest)
+#### Notification (Tumblr)
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | pinObjectId      | String   | unique id for the user post (default field) |
@@ -171,7 +171,7 @@ https://www.figma.com/file/SnSgpbQCZd9Kq0TUXh837p/iHub?node-id=0%3A1
    ----------|----------|------------
     `GET`    | /v1.1/{status} HTTP/1.1 | get post
     `GET`    | /{user_id}/user_timeline | get notification
-##### Pinterest API
+##### Tumblr API
 - Base URL - [https://api.tumblr.com](https://api.tumblr.com)
 
    HTTP Verb | Endpoint | Description
