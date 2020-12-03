@@ -27,7 +27,7 @@ class PinterestViewController: UIViewController {
     
     @IBAction func pinOnLoginButton(_ sender: Any) {
         
-        let myURL = "https://api.tumblr.com/oauth/request_token"
+        let myURL = "https://www.tumblr.com/oauth/request_token"
         UserDefaults.standard.set(true, forKey: "userLoggedIn")
         TumblrAPICaller.client?.login(url: myURL, success: {self.performSegue(withIdentifier: "tumblrHome", sender: self)},failure: { (Error) in
                                         print("Could not log in!")
