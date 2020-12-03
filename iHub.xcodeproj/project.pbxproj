@@ -24,6 +24,7 @@
 		8E508BB92569ABBE007741C9 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E508BB82569ABBE007741C9 /* TwitterViewController.swift */; };
 		8E508BBC2569ABD3007741C9 /* PinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E508BBB2569ABD3007741C9 /* PinterestViewController.swift */; };
 		8E508BC02569B307007741C9 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E508BBF2569B307007741C9 /* DoneViewController.swift */; };
+		BDE2A05B2578B6C400E78CE4 /* TumblrAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE2A05A2578B6C400E78CE4 /* TumblrAPICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8E508BB82569ABBE007741C9 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		8E508BBB2569ABD3007741C9 /* PinterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestViewController.swift; sourceTree = "<group>"; };
 		8E508BBF2569B307007741C9 /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		BDE2A05A2578B6C400E78CE4 /* TumblrAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblrAPICaller.swift; sourceTree = "<group>"; };
 		C2D685C92646819A9A0DC30C /* Pods-Twitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter/Pods-Twitter.release.xcconfig"; sourceTree = "<group>"; };
 		FE187172CBF8BA337E7A753E /* Pods-iHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHub/Pods-iHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 			children = (
 				6EBCF54D21E71F9400451C03 /* Launch Screen.storyboard */,
 				6EBCF52921DF07FC00451C03 /* Main.storyboard */,
+				BDE2A05A2578B6C400E78CE4 /* TumblrAPICaller.swift */,
 				6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */,
 				6EBCF52521DF07FC00451C03 /* AppDelegate.swift */,
 				37D29B8521F90E3400984A88 /* Assets.xcassets */,
@@ -250,6 +253,7 @@
 				6EBCF52621DF07FC00451C03 /* AppDelegate.swift in Sources */,
 				8E508BBC2569ABD3007741C9 /* PinterestViewController.swift in Sources */,
 				4A187A402578AA9300D113BF /* SettingsViewController.swift in Sources */,
+				BDE2A05B2578B6C400E78CE4 /* TumblrAPICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

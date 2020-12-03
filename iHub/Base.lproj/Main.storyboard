@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ui8-GP-Y5N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ui8-GP-Y5N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As2-Br-fWJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="As2-Br-fWJ">
                                 <rect key="frame" x="114.5" y="421" width="185" height="54"/>
                                 <color key="backgroundColor" red="0.34516515932277658" green="0.70846646964383109" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -25,7 +26,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <action selector="onLoginButtom:" destination="ZPY-fu-xa4" eventType="touchUpInside" id="ABX-db-UNu"/>
@@ -36,12 +37,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="iH8-lw-1VL"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="As2-Br-fWJ" firstAttribute="centerY" secondItem="VW7-Ey-9aQ" secondAttribute="centerY" id="8hR-lq-G5y"/>
                             <constraint firstItem="As2-Br-fWJ" firstAttribute="centerX" secondItem="VW7-Ey-9aQ" secondAttribute="centerX" id="fuX-4E-x65"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="iH8-lw-1VL"/>
                     </view>
                     <navigationItem key="navigationItem" id="gHW-hp-gf4"/>
                     <connections>
@@ -59,7 +60,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XmR-7q-hLT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="170" id="gYQ-dn-XpC" customClass="TweetCellTableViewCell" customModule="iHub" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="170"/>
@@ -147,10 +148,10 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Home" id="Fns-8y-qA6">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="V8j-Xf-6Y3">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" style="plain" id="JY4-H3-8mc">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <segue destination="hmu-Lz-dpy" kind="presentation" id="YME-P4-ul8"/>
                             </connections>
@@ -171,32 +172,32 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CuV-h5-LgA">
                                 <rect key="frame" x="0.0" y="56" width="414" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Olx-fg-neS"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4rJ-Gk-1NM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CuV-h5-LgA" firstAttribute="top" secondItem="4rJ-Gk-1NM" secondAttribute="top" id="2Z5-0w-Ily"/>
                             <constraint firstItem="CuV-h5-LgA" firstAttribute="leading" secondItem="4rJ-Gk-1NM" secondAttribute="leading" id="6vS-e8-u4H"/>
                             <constraint firstItem="4rJ-Gk-1NM" firstAttribute="trailing" secondItem="CuV-h5-LgA" secondAttribute="trailing" id="pNc-2Y-ezX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4rJ-Gk-1NM"/>
                     </view>
                     <navigationItem key="navigationItem" id="kVM-fZ-Kbm">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" style="plain" id="9Zb-Rc-P0Z">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <action selector="cancel:" destination="kcI-mG-cD6" id="3Dh-6A-JJr"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" style="plain" id="HrA-cX-Jk7">
-                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" systemColor="labelColor"/>
                             <connections>
                                 <action selector="tweet:" destination="kcI-mG-cD6" id="6Jf-9p-PwL"/>
                             </connections>
@@ -220,7 +221,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.34516515930000002" green="0.70846646960000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -264,14 +265,14 @@
                                     <constraint firstAttribute="height" constant="319" id="FFo-mS-RUa"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fda-Lv-jNk">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fda-Lv-jNk">
                                 <rect key="frame" x="20" y="533" width="358" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="127" id="a2Z-PG-8cP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="OnWelcomeButton:" destination="eyk-fz-6Cd" eventType="touchUpInside" id="o3M-v5-d3Z"/>
@@ -279,7 +280,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rer-JV-B6E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rer-JV-B6E" firstAttribute="bottom" secondItem="fda-Lv-jNk" secondAttribute="bottom" constant="202" id="5Q0-gB-aXK"/>
                             <constraint firstItem="rer-JV-B6E" firstAttribute="trailing" secondItem="fda-Lv-jNk" secondAttribute="trailing" constant="36" id="73w-F1-U5P"/>
@@ -288,7 +290,6 @@
                             <constraint firstItem="lhs-6v-drK" firstAttribute="top" secondItem="rer-JV-B6E" secondAttribute="top" constant="72" id="lmW-TA-BMv"/>
                             <constraint firstItem="lhs-6v-drK" firstAttribute="trailing" secondItem="KbT-5U-HsK" secondAttribute="trailingMargin" id="xuL-Aj-2Tq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rer-JV-B6E"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wkh-dD-a82">
                         <barButtonItem key="backBarButtonItem" title="  " id="wJm-5s-2HN"/>
@@ -306,7 +307,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-ID-sZP">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-ID-sZP">
                                 <rect key="frame" x="134" y="478" width="147" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <state key="normal" title="Twitter">
@@ -316,7 +317,7 @@
                                     <segue destination="ZPY-fu-xa4" kind="show" id="whr-i0-oTi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-Vs-kvO">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-Vs-kvO">
                                 <rect key="frame" x="105" y="564" width="204" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <state key="normal" title="Facebook">
@@ -326,17 +327,17 @@
                                     <segue destination="OzA-Jv-iQz" kind="show" id="xaY-yu-i6I"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oE-du-APP">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oE-du-APP">
                                 <rect key="frame" x="113" y="657" width="189" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <state key="normal" title="Pinterest">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="OJk-PT-0ew" kind="show" id="FGH-4p-0Zx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmg-av-3nU">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmg-av-3nU">
                                 <rect key="frame" x="85" y="777" width="244" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="fJM-aV-1NK"/>
@@ -353,7 +354,7 @@
                                 <rect key="frame" x="43" y="140" width="329" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9t-rP-crT">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9t-rP-crT">
                                 <rect key="frame" x="167" y="739" width="81" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -365,7 +366,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pkB-00-fyf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Hmg-av-3nU" firstAttribute="top" secondItem="9oE-du-APP" secondAttribute="bottom" constant="29" id="Ggr-c2-WCN"/>
                             <constraint firstItem="pkB-00-fyf" firstAttribute="bottom" secondItem="Hmg-av-3nU" secondAttribute="bottom" constant="62" id="IjD-vk-hN8"/>
@@ -380,7 +382,6 @@
                             <constraint firstItem="9oE-du-APP" firstAttribute="top" secondItem="f4m-Vs-kvO" secondAttribute="bottom" constant="24" id="qBo-bv-Cki"/>
                             <constraint firstItem="Hmg-av-3nU" firstAttribute="leading" secondItem="cdc-ID-sZP" secondAttribute="leading" id="qiv-0Y-JfO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pkB-00-fyf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Login" id="NNZ-wq-TlA" colorLabel="IBBuiltInLabel-Red">
                         <barButtonItem key="backBarButtonItem" title="  " id="Rhn-eE-mFt"/>
@@ -398,7 +399,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dz-Qw-JOH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dz-Qw-JOH">
                                 <rect key="frame" x="38" y="499" width="349" height="7"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Twitter Log Out"/>
@@ -407,6 +408,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="gAM-e3-0w1"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5dz-Qw-JOH" firstAttribute="leading" secondItem="gAM-e3-0w1" secondAttribute="leading" constant="38" id="AZO-Gd-wt1"/>
@@ -414,7 +416,6 @@
                             <constraint firstItem="gAM-e3-0w1" firstAttribute="trailing" secondItem="5dz-Qw-JOH" secondAttribute="trailing" constant="27" id="hhc-gx-r5K"/>
                             <constraint firstItem="gAM-e3-0w1" firstAttribute="bottom" secondItem="5dz-Qw-JOH" secondAttribute="bottom" constant="356" id="tj2-70-5Yf"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gAM-e3-0w1"/>
                     </view>
                     <navigationItem key="navigationItem" id="2KE-cN-KYZ"/>
                 </viewController>
@@ -452,7 +453,7 @@
                                 <rect key="frame" x="129" y="186" width="132" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDH-cT-mMz">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDH-cT-mMz">
                                 <rect key="frame" x="103" y="368" width="185" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.73575129533678751" green="0.21131294692330491" blue="0.17571244553578985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -465,15 +466,15 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sbm-rH-Yfy"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                        <viewLayoutGuide key="safeArea" id="Sbm-rH-Yfy"/>
                     </view>
                     <navigationItem key="navigationItem" id="0gb-fw-bRD">
                         <barButtonItem key="backBarButtonItem" title=" " id="R5E-Ul-5uZ"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="69B-J1-Rtl" kind="presentation" id="bn6-3U-28e"/>
+                        <segue destination="69B-J1-Rtl" kind="presentation" identifier="tumblrHome" id="bn6-3U-28e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7TQ-DQ-z2T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -487,7 +488,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eLa-ra-QMU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XUJ-Gz-gfq">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -509,10 +510,10 @@
             </objects>
             <point key="canvasLocation" x="1519" y="2433"/>
         </scene>
-        <!--Pinterest-->
+        <!--Tumblr-->
         <scene sceneID="jew-HG-uAq">
             <objects>
-                <navigationController title="Pinterest" id="69B-J1-Rtl" sceneMemberID="viewController">
+                <navigationController title="Tumblr" id="69B-J1-Rtl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Pinterest" id="GB6-Ow-Kmg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uOH-eS-ec5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -533,7 +534,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r3T-K0-ysz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nUW-Ya-sQJ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -562,7 +563,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="331-3e-lzY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aCc-kA-Fq8">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -632,7 +633,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qx-Tg-zsO">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qx-Tg-zsO">
                                 <rect key="frame" x="103" y="368" width="185" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.15787101880000001" green="0.40260279920000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -649,9 +650,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="tuV-m2-Wvl"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                        <viewLayoutGuide key="safeArea" id="tuV-m2-Wvl"/>
                     </view>
                     <navigationItem key="navigationItem" id="cpu-JN-q7k">
                         <barButtonItem key="backBarButtonItem" title=" " id="JXr-Z7-nPj"/>
@@ -694,14 +695,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPc-Cb-xLi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPc-Cb-xLi">
                                 <rect key="frame" x="132" y="201" width="151" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log in to other socials"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="lym-ye-TNz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="YT1-Uz-I4u"/>
                 </viewController>
@@ -710,19 +711,31 @@
             <point key="canvasLocation" x="-1223" y="3113"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="TwitterLogoBlue" width="200" height="200"/>
-        <image name="f_logo_RGB-Blue_58" width="130" height="130"/>
-        <image name="favor-icon" width="30" height="30"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="ihub1" width="100" height="100"/>
-        <image name="pinterest-circle-logo-svg-vector" width="2834.64990234375" height="2834.64892578125"/>
-        <image name="retweet-icon" width="30" height="30"/>
-        <image name="social-media-and-marketing" width="159" height="160"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2t6-ie-vFT"/>
         <segue reference="7NQ-FT-Pvu"/>
         <segue reference="bn6-3U-28e"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="TwitterLogoBlue" width="200" height="200"/>
+        <image name="f_logo_RGB-Blue_58" width="130" height="130"/>
+        <image name="favor-icon" width="30" height="30"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="ihub1" width="100" height="100"/>
+        <image name="pinterest-circle-logo-svg-vector" width="2834.64990234375" height="2834.64892578125"/>
+        <image name="retweet-icon" width="30" height="30"/>
+        <image name="social-media-and-marketing" width="159" height="160"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
