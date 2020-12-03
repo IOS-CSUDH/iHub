@@ -28,7 +28,7 @@ class TumblrAPICaller: BDBOAuth1SessionManager {
         loginFailure = failure
         TumblrAPICaller.client?.deauthorize()
         TumblrAPICaller.client?.fetchRequestToken(withPath: url, method: "GET", callbackURL: URL(string: "alamoTumblr://oauth"), scope: nil, success: { (requestToken: BDBOAuth1Credential!) -> Void in
-            let url = URL(string: "https://www.tumblr.com/oauth/authorize?oauth_token=\(requestToken.token!)")!
+            let url = URL(string: "https://www.tumblr.com/oauth/access_token=\(requestToken.token!)")!
             UIApplication.shared.open(url)
         }, failure: { (error: Error!) -> Void in
             print("Error: \(error.localizedDescription)")
