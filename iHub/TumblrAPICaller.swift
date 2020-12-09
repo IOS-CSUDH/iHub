@@ -54,4 +54,24 @@ class TumblrAPICaller: BDBOAuth1SessionManager {
             failure(error)
         })
     }
+    
+    // to-do
+    func tmblrPostRequest() {
+        
+    }
+    func tmblrPost() {
+        
+    }
+    
+    func tmblrLikePost() {
+        
+    }
+    
+    func tmblrUnlikePost() {
+    
+    }
+    
+    func tmblrReblogPost() {
+        
+    }
 }
