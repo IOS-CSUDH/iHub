@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBAction func homeScreenButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -34,7 +34,7 @@ class TweetCellTableViewCell: UITableViewCell {
             TwitterAPICaller.client?.favoriteTweet(tweeiId: tweetId, success: {
                 self.setFavorite(true)
             }, failure: { (error) in
-                print("Favorate did not succeed: \(error)")
+                print("Favorite did not succeed: \(error)")
                 
             })
         }
