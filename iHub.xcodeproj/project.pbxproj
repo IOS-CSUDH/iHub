@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37D29B8621F90E3400984A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D29B8521F90E3400984A88 /* Assets.xcassets */; };
+		4A101CA72581F7E3004F0F9A /* tmblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A101CA62581F7E3004F0F9A /* tmblr.m */; };
 		4A187A402578AA9300D113BF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A187A3F2578AA9300D113BF /* SettingsViewController.swift */; };
 		4A187A442578B29200D113BF /* AllTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A187A432578B29200D113BF /* AllTableViewController.swift */; };
 		6EBCF52621DF07FC00451C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCF52521DF07FC00451C03 /* AppDelegate.swift */; };
@@ -30,6 +31,9 @@
 /* Begin PBXFileReference section */
 		25AFF1FAB151C07431936549 /* Pods_iHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D29B8521F90E3400984A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A101CA42581F7E2004F0F9A /* iHub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHub-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A101CA52581F7E3004F0F9A /* tmblr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmblr.h; sourceTree = "<group>"; };
+		4A101CA62581F7E3004F0F9A /* tmblr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmblr.m; sourceTree = "<group>"; };
 		4A187A3F2578AA9300D113BF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4A187A432578B29200D113BF /* AllTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTableViewController.swift; sourceTree = "<group>"; };
 		4CEB8A6500C9DFD9CEF16FBF /* Pods-Twitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter/Pods-Twitter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,10 +84,13 @@
 		6EBCF51921DF07FC00451C03 = {
 			isa = PBXGroup;
 			children = (
+				4A101CA52581F7E3004F0F9A /* tmblr.h */,
+				4A101CA62581F7E3004F0F9A /* tmblr.m */,
 				6EBCF52421DF07FC00451C03 /* iHub */,
 				6EBCF52321DF07FC00451C03 /* Products */,
 				6BFB9ED923EC02A96AB79DEE /* Pods */,
 				BE4E6AE53EB27114CB452298 /* Frameworks */,
+				4A101CA42581F7E2004F0F9A /* iHub-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,7 +169,7 @@
 				TargetAttributes = {
 					6EBCF52121DF07FC00451C03 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1110;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -249,6 +256,7 @@
 				8E0DE8792526E48E00C0DD8F /* TweetCellTableViewCell.swift in Sources */,
 				8E508BB92569ABBE007741C9 /* TwitterViewController.swift in Sources */,
 				8E508BB32569AB85007741C9 /* WelcomeToLoginViewController.swift in Sources */,
+				4A101CA72581F7E3004F0F9A /* tmblr.m in Sources */,
 				4A187A442578B29200D113BF /* AllTableViewController.swift in Sources */,
 				6EBCF52621DF07FC00451C03 /* AppDelegate.swift in Sources */,
 				8E508BBC2569ABD3007741C9 /* PinterestViewController.swift in Sources */,
@@ -394,6 +402,7 @@
 			baseConfigurationReference = 8728C1B5D25905A6274CB7B7 /* Pods-iHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = EJTT2N9E3L;
@@ -405,6 +414,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.iHubApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iHub-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -415,6 +426,7 @@
 			baseConfigurationReference = FE187172CBF8BA337E7A753E /* Pods-iHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = EJTT2N9E3L;
@@ -426,6 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.iHubApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iHub-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
