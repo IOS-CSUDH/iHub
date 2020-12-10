@@ -96,6 +96,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    func tumblrApplication(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        TumblrAPICaller.client?.handleOpenUrl(url: url)
+        
+        ApplicationDelegate.shared.application(
+            app,
+            open: url,
+            sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+            annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+        )
+        return true
+    }
 
     
 

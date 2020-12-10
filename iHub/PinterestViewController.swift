@@ -31,7 +31,7 @@ class PinterestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Pinterest"
+        title = "Tumblr"
         // Do any additional setup after loading the view.
     }
     
