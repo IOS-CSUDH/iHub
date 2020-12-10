@@ -58,12 +58,14 @@ class TumblrAPICaller: BDBOAuth1SessionManager {
     // to-do
     func tmblrPostRequest() {
         
+        //api post request: List<Post> posts = client.blogPosts("tumblr.com");
     }
     func tmblrPost() {
         
     }
     
     func tmblrLikePost() {
+        // api like post request  List<Post> posts = client.blogLikes("tumblr.com");
         
     }
     
@@ -72,6 +74,8 @@ class TumblrAPICaller: BDBOAuth1SessionManager {
     }
     
     func tmblrReblogPost() {
+        
+        // api reblog request: client.postReblog("tumblr.com", null, "");
         
     }
 }
