@@ -65,11 +65,12 @@ class TumblrAPICaller: BDBOAuth1SessionManager {
     }
     
     func tmblrLikePost() {
-        // api like post request  List<Post> posts = client.blogLikes("tumblr.com");
+        // api like post request  client.like(null, "");;
         
     }
     
     func tmblrUnlikePost() {
+        //api unlike request client.unlike(null, "");
     
     }
     
