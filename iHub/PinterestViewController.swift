@@ -9,6 +9,25 @@
 import UIKit
 
 class PinterestViewController: UIViewController {
+    
+       /*
+       
+       func authenticate() {
+           authenticator.authenticate("ello", callback: { [self] creds, error in
+               DispatchQueue.main.async(execute: { [self] in
+                   if let error = error {
+                       authResultsTextView.text = "Error: \(error.localizedDescription)"
+                   } else {
+                       session = TMURLSession(configuration: URLSessionConfiguration.default, applicationCredentials: TMAPIApplicationCredentials(consumerKey: "", consumerSecret: ""), userCredentials: TMAPIUserCredentials(token: creds?.token, tokenSecret: creds?.tokenSecret))
+                       if let token = creds?.token, let tokenSecret = creds?.tokenSecret {
+                           authResultsTextView.text = "Success!\nToken: \(token)\nSecret: \(tokenSecret)"
+                       }
+                       request()
+                   }
+               })
+           })
+       }
+    */
 
     override func viewDidLoad() {
         super.viewDidLoad()

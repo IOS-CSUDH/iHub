@@ -9,14 +9,38 @@
 import UIKit
 import BDBOAuth1Manager
 import FBSDKCoreKit
+import TMTumblrSDK
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    let OAuthTokenConsumerKey = "FYSv7wqaYsxaPnw3wKb9zEXSmDLLSEB1DroZ2MW3t9MXfQ6MEP"
+    let ConsumerSecret = "s5wCN4TffWHHfEYu7HkNGIpnanlgtqbV6uerH69fqfkPkNrdtz"
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        /* - 
+        let applicationCredentials = TMAPIApplicationCredentials(consumerKey: OAuthTokenConsumerKey, consumerSecret: ConsumerSecret)
+        
+        let session = TMURLSession(configuration: URLSessionConfiguration.default, applicationCredentials: applicationCredentials, userCredentials: TMAPIUserCredentials(), networkActivityManager: nil, sessionTaskUpdateDelegate: nil, sessionMetricsDelegate: nil, requestTransformer: nil, additionalHeaders: nil)
+
+        let authenticator = TMOAuthAuthenticator(session: session, applicationCredentials: applicationCredentials, delegate: self)
+        
+        
+        
+        let vc = UIViewController(session: session, authenticator: authenticator)
+        
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = vc
+        window!.makeKeyAndVisible()
+        
+            */
+    
         // Override point for customization after application launch.
         ApplicationDelegate.shared.application(
             application,
@@ -25,6 +49,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+// MARK:  - TMOAuthAuthenticatorDelegate
+
+    func openURL(inBrowser url: URL?) {
+        if let url = url {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -48,6 +81,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        
+        
         TwitterAPICaller.client?.handleOpenUrl(url: url)
         
         ApplicationDelegate.shared.application(
@@ -59,8 +95,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
 
-              
+    
 
 }
 

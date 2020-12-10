@@ -5,6 +5,7 @@ target 'iHub' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks 
   # Pods for Twitter
   use_frameworks!
+  pod 'TMTumblrSDK'
   pod 'AFNetworking'
   pod 'BDBOAuth1Manager'
   pod 'AlamofireImage'
