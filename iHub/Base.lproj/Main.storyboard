@@ -527,7 +527,7 @@
             </objects>
             <point key="canvasLocation" x="1386" y="1726"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Facebook-->
         <scene sceneID="RQA-Cd-ngJ">
             <objects>
                 <tableViewController id="eca-im-iso" sceneMemberID="viewController">
@@ -550,7 +550,7 @@
                             <outlet property="delegate" destination="eca-im-iso" id="cq2-vh-lb6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="0lT-Qv-qjH"/>
+                    <navigationItem key="navigationItem" title="Facebook" id="0lT-Qv-qjH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imu-09-XsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
