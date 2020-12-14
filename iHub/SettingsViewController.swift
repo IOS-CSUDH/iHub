@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBAction func homeScreenButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "backToLogIn", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

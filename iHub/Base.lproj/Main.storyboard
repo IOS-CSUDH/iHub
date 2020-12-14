@@ -525,7 +525,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agg-rl-rnz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386" y="1726"/>
+            <point key="canvasLocation" x="1519" y="1726"/>
         </scene>
         <!--Facebook-->
         <scene sceneID="RQA-Cd-ngJ">
@@ -733,17 +733,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="YT1-Uz-I4u"/>
                     <connections>
-                        <segue destination="xWD-4g-ho2" kind="presentation" id="eB8-eM-r77"/>
+                        <segue destination="xWD-4g-ho2" kind="presentation" identifier="backToLogIn" id="eB8-eM-r77"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWp-cz-Mkh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1223.0769230769231" y="3112.3222748815165"/>
+            <point key="canvasLocation" x="-1223" y="3157"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="2t6-ie-vFT"/>
-        <segue reference="C9M-QV-jRb"/>
+        <segue reference="7NQ-FT-Pvu"/>
         <segue reference="bn6-3U-28e"/>
         <segue reference="eB8-eM-r77"/>
     </inferredMetricsTieBreakers>
