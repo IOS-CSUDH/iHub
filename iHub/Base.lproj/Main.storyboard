@@ -481,7 +481,7 @@
             </objects>
             <point key="canvasLocation" x="1386" y="296"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Tumblr-->
         <scene sceneID="ayt-EJ-8WL">
             <objects>
                 <tableViewController id="JIa-nR-mEg" sceneMemberID="viewController">
@@ -504,7 +504,7 @@
                             <outlet property="delegate" destination="JIa-nR-mEg" id="yrC-25-ZyU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="giL-tU-fSy"/>
+                    <navigationItem key="navigationItem" title="Tumblr" id="giL-tU-fSy"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAB-Rb-5RL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -514,7 +514,7 @@
         <scene sceneID="jew-HG-uAq">
             <objects>
                 <navigationController title="Tumblr" id="69B-J1-Rtl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pinterest" id="GB6-Ow-Kmg"/>
+                    <tabBarItem key="tabBarItem" title="Tumblr" id="GB6-Ow-Kmg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uOH-eS-ec5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -703,6 +703,30 @@
                                     <action selector="homeScreenButton:" destination="lPq-nN-kDb" eventType="touchUpInside" id="8Sq-X3-m54"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJ2-QB-BAd">
+                                <rect key="frame" x="147" y="306" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log out of Twitter"/>
+                                <connections>
+                                    <action selector="twitterLogOut:" destination="lPq-nN-kDb" eventType="touchUpInside" id="B4M-t9-Ngl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yH-ra-H6e">
+                                <rect key="frame" x="137" y="433" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log out of Facebook"/>
+                                <connections>
+                                    <action selector="facebookLogOut:" destination="lPq-nN-kDb" eventType="touchUpInside" id="Y51-Uo-qrU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-ui-UtB">
+                                <rect key="frame" x="146" y="535" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log out of Tumblr"/>
+                                <connections>
+                                    <action selector="tumblrLogOut:" destination="lPq-nN-kDb" eventType="touchUpInside" id="LPm-3H-lUf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lym-ye-TNz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -718,9 +742,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wlt-Ca-pGH"/>
+        <segue reference="2t6-ie-vFT"/>
         <segue reference="C9M-QV-jRb"/>
-        <segue reference="hRE-XK-kxp"/>
+        <segue reference="bn6-3U-28e"/>
         <segue reference="eB8-eM-r77"/>
     </inferredMetricsTieBreakers>
     <resources>

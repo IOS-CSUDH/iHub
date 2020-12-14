@@ -18,7 +18,22 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func twitterLogOut(_ sender: Any) {
+        
+        TwitterAPICaller.client?.logout()
+        self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
+        //self.performSegue(withIdentifier: "HomeLogin", sender: self)
+    }
+    
+    @IBAction func facebookLogOut(_ sender: Any) {
+    }
+    
+    @IBAction func tumblrLogOut(_ sender: Any) {
+        TumblrAPICaller.client?.logout()
+        self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set(false, forKey: "tumblrUserLoggedIn")
+    }
     /*
     // MARK: - Navigation
 

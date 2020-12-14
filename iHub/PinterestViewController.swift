@@ -37,7 +37,7 @@ class PinterestViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
          
-         if UserDefaults.standard.bool(forKey: "userLoggedIn") == true{
+         if UserDefaults.standard.bool(forKey: "tumblrUserLoggedIn") == true{
              self.performSegue(withIdentifier: "tumblrHome", sender: self)
          }
     }
@@ -47,7 +47,7 @@ class PinterestViewController: UIViewController {
     @IBAction func pinOnLoginButton(_ sender: Any) {
         
         let myURL = "https://www.tumblr.com/oauth/request_token"
-        UserDefaults.standard.set(true, forKey: "userLoggedIn")
+        UserDefaults.standard.set(true, forKey: "tumblrUserLoggedIn")
         TumblrAPICaller.client?.login(url: myURL, success: {self.performSegue(withIdentifier: "tumblrHome", sender: self)},failure: { (Error) in
                                         print("Could not log in!")
                                        })
